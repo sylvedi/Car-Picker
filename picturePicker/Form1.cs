@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace picturePicker
 {
+    // Sylvanus Edi
+    // this is my work
+    // 02/10/2019
+
+    
     public partial class Form1 : Form
     {
         public Form1()
         {
+            //startes the program with no list.
             InitializeComponent();
             gt.Visible = false;
             ferrari_1971.Visible = false;
@@ -30,6 +36,7 @@ namespace picturePicker
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //if start is cleck with out inputing details, start program with no response.
             gt.Visible = false;
             ferrari_1971.Visible = false;
             ford_1961.Visible = false;
@@ -41,7 +48,7 @@ namespace picturePicker
             ford_1971.Visible = false;
             detail_input.Text = "";
 
-
+            //display selected image and year
             if (car_list.GetSelected(0) && radio_1961.Checked)
             {
 
@@ -87,6 +94,7 @@ namespace picturePicker
 
                 ferrari_1981.Visible = true;
             }
+            //display picture, year, and name
             if (car_list.GetSelected(0) && radio_1961.Checked && car_name.Checked)
             {
                 detail_input.Text = "BMW 1500\n";
@@ -123,6 +131,7 @@ namespace picturePicker
             {
                 detail_input.Text = "Ferrari 308\n";
             }
+            //display picture, year, name, and manufactured date.
             if (car_list.GetSelected(0) && radio_1961.Checked && car_name.Checked && car_year.Checked)
             {
                 detail_input.Text += "Manufactured in 1961";
@@ -165,6 +174,7 @@ namespace picturePicker
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //reset program.
             gt.Visible = false;
             ferrari_1971.Visible = false;
             ford_1961.Visible = false;
