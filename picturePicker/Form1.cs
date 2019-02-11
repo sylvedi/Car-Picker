@@ -12,7 +12,7 @@ namespace picturePicker
 {
     // Sylvanus Edi
     // this is my work
-    // 02/10/2019
+    // 02/10/2019.
 
     
     public partial class Form1 : Form
